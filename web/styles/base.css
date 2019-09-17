@@ -1,0 +1,64 @@
+html{ 	
+	height: 100%;
+	}	
+body{
+	font-family: 'Lato';
+	color: white;
+	background-image: url("../imgs/uvac.jpg");
+	background-size: cover;
+	background-position: center;
+	}
+h1{
+
+	font-weight: 700;
+	font-size: 5em;
+	}
+h2{
+
+	font-weight: 700;
+        text-shadow: 0px 4px 3px rgba(0,0,0,0.4),
+				 0px 8px 13px rgba(0,0,0,0.1),
+				 0px 18px 23px rgba(0,0,0,0.1);
+}
+
+label{
+    color:black;
+}
+
+.red{
+    color:#990000;
+}
+
+*[role="form"] {
+    max-width: 850px;
+    padding: 15px;
+    margin: 0 auto;
+    border-radius: 0.3em;
+    background-color: rgba(242, 242, 242, 0.77);
+    margin-bottom: 5%;
+}
+
+*[role="form"] h2 { 
+    font-weight: 600;
+    font-family: 'Open Sans' , sans-serif;
+    font-size: 40px;
+    color:#333333;
+    margin-top: 5%;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    text-shadow: 0px 4px 3px rgba(0,0,0,0.6),
+				 0px 8px 13px rgba(0,0,0,0.1),
+				 0px 18px 23px rgba(0,0,0,0.1);
+}
+
+
+span:not(#myCarret){
+    color:#990000;
+}
+
+#jmbgHint{
+    color:white;
+}
+
+

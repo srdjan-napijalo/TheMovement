@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+  <html>
+    <head> 
+      <meta charset="UTF-8">
+    	<title>Registracija</title>
+               <script>
+    if(!window.parentPage) window.location = "movement.jsp";     
+                         selSecondPart();
+                        addListeners2();  
+          </script>
+    </head>
+    <body>
+    <div id="destination">
+      
+    </div>
+        <div>
+                <h2>Registracija</h2>
+                <div class="form-group form-inline">
+                        <label for="birthYear" class="col-sm-3 control-label">Datum rođenja: </label>
+                        <select id="birthYear" class="form-control" >
+                            <option value="0" selected disabled>Godina</option>
+                        </select>
+                        <select id="birthMonth" class="form-control" >
+                            <option value="0" disabled selected>Mesec</option>
+                            <option value="1">Januar</option>
+                            <option value="2">Februar</option>
+                            <option value="3">Mart</option>
+                            <option value="4">April</option>
+                            <option value="5">Maj</option>
+                            <option value="6">Jun</option>
+                            <option value="7">Jul</option>
+                            <option value="8">Avgust</option>
+                            <option value="9">Septembar</option>
+                            <option value="10">Oktobar</option>
+                            <option value="11">Novembar</option>
+                            <option value="12">Decembar</option>
+                        </select>
+                        <select id="birthDay" class="form-control">
+                            <option value="0" disabled selected>Dan</option>
+                        </select>
+                </div>
+                <div class="form-group">
+                    <label for=jmbg class="col-sm-3 control-label">JMBG: <span id="infoSpan"><span></label>
+                    <div class="col-sm-9">
+                        <input type="text" id="jmbg" placeholder="Nikome nećemo otkriti vaš JMBG" pattern= "[0-9]" class="form-control" autofocus>
+                        <span class="hintSpan" id="jmbgHint"></span>
+                    </div>
+                </div>
+                
+                <div class="form-group">
+                    <label class="control-label col-sm-3">Pol</label>
+                    <div class="col-sm-6">
+                        <div class="row">
+                               <label class="radio-inline badge" id="genBtn"><strong><i class="fas fa-redo"></i></strong></label>
+                               <label>Pol : </label>
+                               <label class="radio-inline badge" id="fBtn"><strong>Ž</strong></label>
+                               <input type="radio" id="femRadio"  name="pol" value="fem">
+                               <label class="radio-inline badge" id="mBtn"><strong>M</strong></label>
+                               <input type="radio" id="maleRadio" name="pol" value="male">   
+                        </div>
+                    </div>
+                </div> 
+                <div class="form-group">
+                    <div class="col-sm-9 col-sm-offset-3">
+                        <span class="whitesmokeClass">*Polja na ovoj stranici nije neophodno popuniti*</span>
+                    </div>
+                </div>
+                
+                <button type="button" id="btn" onclick="myScript2()" class="btn btn-primary btn-block">Registrujte se</button>
+                <div class="form-group">
+                     
+                    <div class="col-sm-12"><label> Već ste registrovani?<a href="prijava.jsp"> Prijavite se odmah!</a> </label>
+                        
+                    </div>
+                </div> 
+    </div>
+
+      
+</body>
+</html>
